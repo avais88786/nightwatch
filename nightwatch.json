@@ -1,0 +1,41 @@
+{
+  "src_folders": ["tests"],
+  "output_folder": "reports",
+  "custom_commands_path": "",
+  "custom_assertions_path": "",
+  "page_objects_path": "page-objects",
+  "globals_path": "globals/globals.js",
+
+  "selenium": {
+    "start_process": true,
+    "server_path": "bin/selenium-server-standalone-3.9.1.jar",
+    "log_path": "",
+    "host": "127.0.0.1",
+    "port": 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "./bin/drivers/chromedriver.exe",
+      "webdriver.ie.driver": "/bin/drivers/geckodriver.exe"
+    }
+  },
+
+  "test_settings": {
+    "default": {
+      "launch_url": "https://secure.goskippy.com/ebroker4/",
+      "selenium_host": "localhost",
+			"selenium_port": 4444,
+			"pathname": "/wd/hub",
+			"silent": true,
+			"screenshots": {
+				"enabled": false,
+				"path": ""
+			},
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "browserstack.user": "",
+        "browserstack.key": ""
+      }
+    }
+  }
+}
